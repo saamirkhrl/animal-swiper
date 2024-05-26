@@ -1,0 +1,96 @@
+/* index.css */
+
+body {
+  font-family: "Arial", sans-serif;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+}
+
+.animal-tinder-name {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  margin-bottom: 20px;
+}
+
+.btn {
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  margin: 0 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
+
+.btn.yes {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn.no {
+  background-color: #f44336;
+  color: white;
+}
+
+.image-container {
+  position: relative;
+  height: 300px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.picture {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.picture.next {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.picture.animate-out {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.picture.animate-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.options label {
+  margin: 0 10px;
+}
